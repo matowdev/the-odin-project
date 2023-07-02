@@ -1,3 +1,2 @@
 # The_Odin_Project
-..Hugin and Munin
-Hello Odin..
+..Hugin and Munin ..Hello Odin!
