@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .page__container {
+            margin: 0 auto;
+            max-width: 1440px;
+            min-width: 320px;
+        }
+
+        .page__title {
+            font-size: 40px;
+            color: lightslategray;
+            text-shadow: 0 1px 10px lightskyblue;
+        }
+
+        .page__links-wrap {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        .page__link {
+            font-size: 20px;
+            color: lightslategray;
+            text-decoration: none;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+        .page__link:hover {
+            text-shadow: 0 1px 10px lightcoral;
+        }
+
+        .page__img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page__img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <div class="page__container">
+        <h1 class="page__title">Homepage..</h1>
+        <div class="page__links-wrap">
+            <a class="page__link" href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">Click me..!?</a>
+            <a class="page__link" href="./pages/about.html">About page</a>
+            <div class="page__img-wrap">
+                <img class="page__img" src="./images/dog.jpg" alt="Dog Charles in all his glory..">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
