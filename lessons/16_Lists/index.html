@@ -2,59 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .page {
-            padding-left: 20px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 22px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .page {
+      padding-left: 20px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 22px;
+    }
 
-        .oreder-title {
-            color: darkgreen;
-            text-shadow: 0 1px 10px lightslategray;
-        }
+    .oreder-title {
+      color: darkgreen;
+      text-shadow: 0 1px 10px lightslategray;
+    }
 
-        .unoreder-title {
-            color: darkred;
-            text-shadow: 0 1px 10px lightslategray;
-        }
+    .unoreder-title {
+      color: darkred;
+      text-shadow: 0 1px 10px lightslategray;
+    }
 
-        .page__unordered-list {
-            list-style-type: circle;
-            
-        }
+    .page__unordered-list {
+      list-style-type: circle;
 
-        .unordered-nesting__list {
-            list-style-type: square;
-        }
-    </style>
+    }
+
+    .unordered-nesting__list {
+      list-style-type: square;
+    }
+  </style>
 </head>
 
 <body class="page">
-    <h2 class="page__title oreder-title">Ordered list, for ex.</h2>
-    <ol class="page__ordered-list" reversed>
-        <li class="page__ordered-item">Lorem, ipsum.</li>
-        <li class="page__ordered-item">Lorem, ipsum.</li>
-        <li class="page__ordered-item">Lorem, ipsum.</li>
-    </ol>
+  <h2 class="page__title oreder-title">Ordered list, for ex.</h2>
+  <ol class="page__ordered-list" reversed>
+    <li class="page__ordered-item">Lorem, ipsum.</li>
+    <li class="page__ordered-item">Lorem, ipsum.</li>
+    <li class="page__ordered-item">Lorem, ipsum.</li>
+  </ol>
 
-    <h2 class="page__title unoreder-title">Unordered list, for ex.</h2>
-    <ul class="page__unordered-list">
-        <li class="page__unordered-item">Lorem, ipsum.</li>
-        <li class="page__unordered-item unordered-nesting">Lorem, ipsum.
-            <ul class="unordered-nesting__list">
-                <li class="unordered-nesting__item">Lorem, ipsum dolor.</li>
-            </ul>
-        </li>
-        <li class="page__unordered-item">Lorem, ipsum.</li>
-        <li class="page__unordered-item">Lorem, ipsum.</li>
-    </ul>
+  <h2 class="page__title unoreder-title">Unordered list, for ex.</h2>
+  <ul class="page__unordered-list">
+    <li class="page__unordered-item">Lorem, ipsum.</li>
+    <li class="page__unordered-item unordered-nesting">Lorem, ipsum.
+      <ul class="unordered-nesting__list">
+        <li class="unordered-nesting__item">Lorem, ipsum dolor.</li>
+      </ul>
+    </li>
+    <li class="page__unordered-item">Lorem, ipsum.</li>
+    <li class="page__unordered-item">Lorem, ipsum.</li>
+  </ul>
 </body>
 
 </html>
