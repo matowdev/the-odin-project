@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julekake</title>
+
+  <style>
+    .dish__image-wrap {
+      position: relative;
+      width: 600px;
+      height: 450px;
+      cursor: help;
+    }
+
+    .dish__image-wrap::after {
+      content: "";
+      position: absolute;
+      top: 230px;
+      left: 350px;
+      display: none;
+      width: 600px;
+      height: 165px;
+      background: url("../images/hint_julekake.jpg") no-repeat center / contain;
+    }
+
+    .dish__image-wrap:hover::after {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="page">
+  <h1 class="page__title">Julekake</h1>
+  <div class="dish page__dish">
+    <div class="dish__image-wrap">
+      <img class="dish__image" src="../images/julekake.jpg" width="600" height="450" alt="Photo: Julekake">
+    </div>
+    <div class="description desc dish__desc-wrap">
+      <h2 class="desc__heading">Description</h2>
+      <p class="desc__text">Mm-hmm.. Christmas bread with candied fruits and a yummy cardamom flavor.</p>
+    </div>
+    <div class="ingredients ing dish__ing-wrap">
+      <h2 class="ing__heading">Ingredients</h2>
+      <ul class="ing__list">
+        <li class="ing__item">2 (.25 ounce) packages active dry yeast</li>
+        <li class="ing__item">½ cup warm water (110 degrees F/45 degrees C)</li>
+        <li class="ing__item">2 cups cold milk</li>
+        <li class="ing__item">1 cup white sugar</li>
+        <li class="ing__item">1 cup butter, melted</li>
+        <li class="ing__item">2 teaspoons salt</li>
+        <li class="ing__item">8 ½ cups all-purpose flour, divided</li>
+        <li class="ing__item">1 cup golden raisins</li>
+        <li class="ing__item">½ cup candied cherries, sliced</li>
+        <li class="ing__item">½ cup chopped candied citron</li>
+        <li class="ing__item">1 tablespoon ground cardamom</li>
+        <li class="ing__item">1 large egg white, beaten</li>
+      </ul>
+    </div>
+    <div class="steps stp dish__stp-wrap">
+      <h2 class="stp__heading">Steps</h2>
+      <ol class="stp__list">
+        <li class="stp__item">
+          <p class="stp__item-text">Dissolve yeast in warm water.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Pour cold milk into a wide, shallow, heavy-bottomed saucepan. Heat over medium heat,
+            stirring frequently, until small bubbles appear around the outside of the saucepan.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Remove from the heat and transfer to a large bowl. Stir in sugar, melted butter, and
+            salt; let sit until lukewarm, 5 to 10 minutes.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Add yeast mixture, then stir in 4 cups flour. Cover and let rise in a warm place
+            until doubled in size, about 2 hours.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Punch down dough. Stir in raisins, cherries, citron, and cardamom. Work in remaining
+            4 1/2 cups flour until a soft dough forms. Cover and let rise in a warm place until doubled in size, 2 to 3
+            hours.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Knead dough slightly on a lightly floured surface. Divide into fourths and form into
+            round loaves. Place loaves onto greased cookie sheets. Cover and let rise in a warm place until doubled in
+            size, 1 to 2 hours.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Preheat the oven to 350 degrees F (175 degrees C). Brush loaves with egg white.</p>
+        </li>
+        <li class="stp__item">
+          <p class="stp__item-text">Bake in the preheated oven until golden brown, 30 to 40 minutes.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+
+</html>
