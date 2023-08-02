@@ -5,13 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oxtails with Gravy</title>
+
+  <style>
+    .dish__image-wrap {
+      position: relative;
+      width: 600px;
+      height: 450px;
+      cursor: help;
+    }
+
+    .dish__image-wrap::after {
+      content: "";
+      position: absolute;
+      top: 230px;
+      left: 350px;
+      display: none;
+      width: 600px;
+      height: 165px;
+      background: url("../images/hint_oxtails_with_gravy.jpg") no-repeat center / contain;
+    }
+
+    .dish__image-wrap:hover::after {
+      display: block;
+    }
+  </style>
 </head>
 
 <body class="page">
   <h1 class="page__title">Oxtails with Gravy</h1>
   <div class="dish page__dish">
-    <img class="dish__image" src="../images/oxtails_with_gravy.jpg" width="600" height="450"
+    <div class="dish__image-wrap">
+      <img class="dish__image" src="../images/oxtails_with_gravy.jpg" width="600" height="450"
       alt="Photo: Oxtails with Gravy">
+    </div>
     <div class="description desc dish__desc-wrap">
       <h2 class="desc__heading">Description</h2>
       <p class="desc__text">This oxtail recipe was my mom's, and it's a soul food blast from the past. I adjust spices
