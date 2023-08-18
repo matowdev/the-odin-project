@@ -1,0 +1,17 @@
+.page {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.page__container {
+  margin: 0 auto;
+  padding: 30px 30px;
+  max-width: 1200px;
+}
+
+.page__div {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  background-color: red;
+}
