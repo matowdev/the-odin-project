@@ -1,0 +1,41 @@
+.page {
+  display: flex;
+  gap: 30px;
+  padding: 30px 50px;
+}
+
+.page__btn {
+  border: none;
+  padding: 10px;
+  font-family: Helvetica, 'Times New Roman', sans-serif;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.page__btn:focus-visible {
+  outline: 2px solid lightcoral;
+}
+
+.page__btn_black {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+.page__btn_black:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.page__btn_yellow {
+  background-color: yellow;
+}
+
+.page__btn_yellow:hover {
+  color: white;
+  background-color: black;
+}
