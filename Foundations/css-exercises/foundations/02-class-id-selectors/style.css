@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.page__paragraph {
+  font-family: Verdana, 'DejaVu Sans', sans-serif;
+  background-color: lightpink;
+}
+
+.page__paragraph_big {
+  font-size: 24px;
+}
+
+.page__div {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#one {
+  font-size: 36px;
+  color: blue;
+}
+
+#another {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: lightgreen;
+}
