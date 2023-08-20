@@ -1,0 +1,12 @@
+.page {
+  margin: 30px auto;
+  max-width: 1200px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.page__container > .page__text {
+  font-size: 20px;
+  text-align: center;
+  color: red;
+  background-color: yellow;
+}
