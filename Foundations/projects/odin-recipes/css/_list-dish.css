@@ -1,0 +1,33 @@
+.list-dish {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.list-dish__item {
+  padding-left: 33px;
+  font-weight: 600;
+  background: url("../images/crow_icon.png") no-repeat left / contain;
+}
+
+.list-dish__item-link {
+  position: relative;
+  color: gray;
+  outline: none;
+}
+
+.list-dish__item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(36, 105, 209);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.list-dish__item-link:hover:not(:active)::after {
+  transform: scaleX(1);
+}

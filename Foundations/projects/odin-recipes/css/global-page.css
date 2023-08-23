@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  /* min-width: 320px; */
+  font-family: "Gothic A1", Arial, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  /* height: auto; */
+  height: 1500px;
+  color: black;
+  background-color: white;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 50px 0;
+  max-width: 1600px;
+}
+
+.page__title {
+  margin-top: 0;
+}
+
+.page__title_main {
+  display: inline-block;
+  padding-right: 55px;
+  background: url("../images/dish_icon.png") no-repeat right / contain;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
