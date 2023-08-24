@@ -1,12 +1,15 @@
 .list-dish {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  gap: 12px 12px;
 }
 
 .list-dish__item {
-  padding-left: 33px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
   font-weight: 600;
+  font-size: 22px;
   background: url("../images/crow_icon.png") no-repeat left / contain;
 }
 

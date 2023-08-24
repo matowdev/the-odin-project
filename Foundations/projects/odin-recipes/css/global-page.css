@@ -12,31 +12,31 @@ body {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   text-decoration: none;
 }
 
 .page {
-  /* min-width: 320px; */
+  min-width: 576px;
   font-family: "Gothic A1", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: normal;
-  /* height: auto; */
-  height: 1500px;
+  height: auto;
   color: black;
-  background-color: white;
+  background: linear-gradient(#c0c7cf, #fcfdff);
 }
 
-.container {
+.page__container {
   margin-right: auto;
   margin-left: auto;
-  padding: 30px 50px 0;
+  padding: 30px 50px 30px;
   max-width: 1600px;
+  height: 100%;
+}
+
+.page__container_main {
+  position: relative;
+  height: 100vh;
 }
 
 .page__title {
@@ -46,7 +46,17 @@ a {
 .page__title_main {
   display: inline-block;
   padding-right: 55px;
+  font-size: 35px;
   background: url("../images/dish_icon.png") no-repeat right / contain;
+}
+
+.page__bg-main {
+  position: absolute;
+  bottom: 32px;
+  right: 50px;
+  width: 200px;
+  height: 200px;
+  background: url("../images/odin_bg_2.png") no-repeat center / contain;
 }
 
 .list-reset {
