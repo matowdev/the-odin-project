@@ -1,3 +1,5 @@
+/* global */
+
 html {
   box-sizing: border-box;
 }
@@ -15,6 +17,14 @@ body {
 a {
   text-decoration: none;
 }
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* page */
 
 .page {
   min-width: 576px;
@@ -57,10 +67,40 @@ a {
   width: 200px;
   height: 200px;
   background: url("../images/odin_bg_2.png") no-repeat center / contain;
+  transition-property: cursor, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.page__bg-main:hover {
+  cursor: help;
+  transform: scale(1.1);
+}
+
+/* common */
+
+.image-wrap {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  cursor: help;
+}
+
+.image-wrap::after {
+  content: "";
+  position: absolute;
+  top: 230px;
+  left: 350px;
+  display: none;
+  width: 600px;
+  height: 165px;
+}
+
+.image-wrap:hover::after {
+  display: block;
+}
+
+.image {
+  border-radius: 50% 20% / 10% 40%;
+  /* outline: 2px solid rgb(36, 105, 209); */
 }

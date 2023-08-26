@@ -1,0 +1,4 @@
+.julekake__image-wrap::after {
+  border-radius: 10px 50px / 120px;
+  background: url("../images/hint_julekake.jpg") no-repeat center / contain;
+}
