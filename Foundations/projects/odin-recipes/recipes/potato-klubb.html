@@ -8,81 +8,60 @@
   <link rel="shortcut icon" href="../images/favicon_dish.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
-
-  <style>
-    .dish__image-wrap {
-      position: relative;
-      width: 600px;
-      height: 450px;
-      cursor: help;
-    }
-
-    .dish__image-wrap::after {
-      content: "";
-      position: absolute;
-      top: 230px;
-      left: 350px;
-      display: none;
-      width: 600px;
-      height: 165px;
-      background: url("../images/hint_potato_klubb.jpg") no-repeat center / contain;
-    }
-
-    .dish__image-wrap:hover::after {
-      display: block;
-    }
-  </style>
 </head>
 
 <body class="page">
   <div class="page__container">
-    <h1 class="page__title">Potato Klubb</h1>
-    <div class="dish page__dish">
-      <div class="dish__image-wrap">
-        <img class="dish__image" src="../images/potato_klubb.jpg" width="600" height="450" alt="Photo: Potato Klubb">
+    <a class="page__link" href="../index.html">
+      <h1 class="page__title">Potato Klubb</h1>
+    </a>
+    <div class="potato page__dish">
+      <div class="image-wrap potato__image-wrap">
+        <img class="image potato__image" src="../images/potato_klubb.jpg" width="600" height="450"
+          alt="Photo: Potato Klubb">
       </div>
-      <div class="description desc dish__desc-wrap">
-        <h2 class="desc__heading">Description</h2>
-        <p class="desc__text">My grandmother always served it with fresh peas. As good as the potato klubb are the first
-          day, they're even better the second day sliced and fried in butter until golden brown. We like to have them
-          for breakfast with fried eggs.</p>
-      </div>
-      <div class="ingredients ing dish__ing-wrap">
-        <h2 class="ing__heading">Ingredients</h2>
-        <ul class="ing__list">
-          <li class="ing__item">2 cups all-purpose flour</li>
-          <li class="ing__item">½ teaspoon salt</li>
-          <li class="ing__item">¼ teaspoon baking powder</li>
-          <li class="ing__item">¼ teaspoon ground black pepper</li>
-          <li class="ing__item">4 cups potatoes, peeled and grated</li>
-          <li class="ing__item">2 tablespoons grated onion</li>
-          <li class="ing__item">8 ounces cooked ham, cut into 1 inch cubes</li>
-          <li class="ing__item">2 teaspoons salt</li>
-          <li class="ing__item">1 cup melted butter</li>
+      <details class="details desc-wrap potato__desc-wrap" open>
+        <summary class="summary heading potato__heading">Description</summary>
+        <p class="text potato__text">My grandmother always served it with fresh peas. As good as the potato klubb are
+          the first day, they're even better the second day sliced and fried in butter until golden brown. We like to
+          have them for breakfast with fried eggs.</p>
+      </details>
+      <details class="details ingredients potato__ing-wrap">
+        <summary class="summary ing-heading potato__ing-heading">Ingredients</summary>
+        <ul class="list-reset ing-list potato__ing-list">
+          <li class="ing-item potato__ing-item">2 cups all-purpose flour</li>
+          <li class="ing-item potato__ing-item">½ teaspoon salt</li>
+          <li class="ing-item potato__ing-item">¼ teaspoon baking powder</li>
+          <li class="ing-item potato__ing-item">¼ teaspoon ground black pepper</li>
+          <li class="ing-item potato__ing-item">4 cups potatoes, peeled and grated</li>
+          <li class="ing-item potato__ing-item">2 tablespoons grated onion</li>
+          <li class="ing-item potato__ing-item">8 ounces cooked ham, cut into 1 inch cubes</li>
+          <li class="ing-item potato__ing-item">2 teaspoons salt</li>
+          <li class="ing-item potato__ing-item">1 cup melted butter</li>
         </ul>
-      </div>
-      <div class="steps stp dish__stp-wrap">
-        <h2 class="stp__heading">Steps</h2>
-        <ol class="stp__list">
-          <li class="stp__item">
-            <p class="stp__item-text">Mix the flour, 1/2 teaspoon salt, baking powder, and pepper together in a bowl.
-              Place the potatoes and onion in a large bowl, and stir in the flour mixture until thoroughly blended. Use
-              floured hands to knead the potato mixture in the bowl until it takes on the quality of stiff bread dough.
-              Add additional flour if the dough is too sticky.</p>
+      </details>
+      <details class="details steps potato__stp-wrap">
+        <summary class="summary stp-heading potato__stp-heading">Steps</summary>
+        <ol class="stp-list potato__stp-list">
+          <li class="stp-item potato__stp-item">
+            <p class="text potato__stp-text">Mix the flour, 1/2 teaspoon salt, baking powder, and pepper together in a
+              bowl. Place the potatoes and onion in a large bowl, and stir in the flour mixture until thoroughly
+              blended. Use floured hands to knead the potato mixture in the bowl until it takes on the quality of stiff
+              bread dough. Add additional flour if the dough is too sticky.</p>
           </li>
-          <li class="stp__item">
-            <p class="stp__item-text">Pinch off a tennis ball-sized piece of dough and shape it around a cube of ham,
-              completely covering the ham, to form a ball. Repeat with remaining dough and ham cubes. Set aside any
+          <li class="stp-item potato__stp-item">
+            <p class="text potato__stp-text">Pinch off a tennis ball-sized piece of dough and shape it around a cube of
+              ham, completely covering the ham, to form a ball. Repeat with remaining dough and ham cubes. Set aside any
               extra ham.</p>
           </li>
-          <li class="stp__item">
-            <p class="stp__item-text"> Fill a large pot with water, add 2 teaspoons salt and any extra ham, and bring to
-              a boil over medium-high heat. Carefully slide the balls into the boiling water, a few at a time. Loosen
-              any sticking to the bottom of the pot. Simmer for 45 minutes to 1 hour. Remove with a slotted spoon, and
-              drain on a plate. Serve hot with melted butter.</p>
+          <li class="stp-item potato__stp-item">
+            <p class="text potato__stp-text">Fill a large pot with water, add 2 teaspoons salt and any extra ham, and
+              bring to a boil over medium-high heat. Carefully slide the balls into the boiling water, a few at a time.
+              Loosen any sticking to the bottom of the pot. Simmer for 45 minutes to 1 hour. Remove with a slotted
+              spoon, and drain on a plate. Serve hot with melted butter.</p>
           </li>
         </ol>
-      </div>
+      </details>
     </div>
   </div>
 </body>

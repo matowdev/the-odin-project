@@ -35,7 +35,7 @@ a {
   margin-left: auto;
   padding: 30px 50px 30px;
   max-width: 1600px;
-  min-height: 950px;
+  min-height: 935px;
   max-height: 2800px;
   background: inherit;
 }
@@ -168,6 +168,14 @@ a {
   padding-left: 20px;
 }
 
+.stp-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .stp-item:hover {
   color: rgb(36, 105, 209);
+}
+
+.stp-item::marker {
+  font-weight: bold;
 }
