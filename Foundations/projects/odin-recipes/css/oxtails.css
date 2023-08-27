@@ -1,0 +1,4 @@
+.oxtails__image-wrap::after {
+  background: url("../images/hint_oxtails_with_gravy.jpg") no-repeat center /
+    contain;
+}

@@ -1,5 +1,3 @@
 .julekake__image-wrap::after {
-  border-radius: 10px 50px / 120px;
-  filter: grayscale(0.9);
   background: url("../images/hint_julekake.jpg") no-repeat center / contain;
 }

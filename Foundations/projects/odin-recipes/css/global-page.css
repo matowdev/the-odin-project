@@ -53,7 +53,8 @@ a {
   display: inline-block;
   padding-right: 55px;
   font-size: 35px;
-  background: url("../images/dish_icon.png") no-repeat right / contain;
+  line-height: 45px;
+  background: url("../images/dish_icon.png") no-repeat right / 45px 45px;
 }
 
 .page__dish {
@@ -94,10 +95,12 @@ a {
   position: absolute;
   top: 230px;
   left: 350px;
+  border-radius: 10px 50px / 120px;
   width: 600px;
   height: 165px;
   visibility: hidden;
   opacity: 0;
+  filter: grayscale(0.9);
   transition-property: visibility, opacity;
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
@@ -133,6 +136,10 @@ a {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 22px;
+}
+
+.summary::marker {
+  color: rgb(36, 105, 209);
 }
 
 .text {

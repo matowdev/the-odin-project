@@ -8,86 +8,65 @@
   <link rel="shortcut icon" href="../images/favicon_dish.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
-
-  <style>
-    .dish__image-wrap {
-      position: relative;
-      width: 600px;
-      height: 450px;
-      cursor: help;
-    }
-
-    .dish__image-wrap::after {
-      content: "";
-      position: absolute;
-      top: 230px;
-      left: 350px;
-      display: none;
-      width: 600px;
-      height: 165px;
-      background: url("../images/hint_oxtails_with_gravy.jpg") no-repeat center / contain;
-    }
-
-    .dish__image-wrap:hover::after {
-      display: block;
-    }
-  </style>
 </head>
 
 <body class="page">
   <div class="page__container">
-    <h1 class="page__title">Oxtails with Gravy</h1>
-    <div class="dish page__dish">
-      <div class="dish__image-wrap">
-        <img class="dish__image" src="../images/oxtails_with_gravy.jpg" width="600" height="450"
+    <a class="page__link" href="../index.html">
+      <h1 class="page__title">Oxtails with Gravy</h1>
+    </a>
+    <div class="oxtails page__dish">
+      <div class="image-wrap oxtails__image-wrap">
+        <img class="image oxtails__image" src="../images/oxtails_with_gravy.jpg" width="600" height="450"
           alt="Photo: Oxtails with Gravy">
       </div>
-      <div class="description desc dish__desc-wrap">
-        <h2 class="desc__heading">Description</h2>
-        <p class="desc__text">This oxtail recipe was my mom's, and it's a soul food blast from the past. I adjust spices
-          to my taste (I love lots of spices).</p>
-        <p class="desc__text">You can double the gravy if you like. My family loves this dish served with rice.</p>
-      </div>
-      <div class="ingredients ing dish__ing-wrap">
-        <h2 class="ing__heading">Ingredients</h2>
-        <ul class="ing__list">
-          <li class="ing__item">2 pounds beef oxtail</li>
-          <li class="ing__item">1 onion, chopped</li>
-          <li class="ing__item">1 clove garlic, minced</li>
-          <li class="ing__item">1 tablespoon Greek seasoning</li>
-          <li class="ing__item">1 tablespoon salt, or more to taste</li>
-          <li class="ing__item">1 teaspoon ground black pepper, or more to taste</li>
-          <li class="ing__item">1 teaspoon seasoning salt</li>
-          <li class="ing__item">4 cups water, or as needed</li>
-          <li class="ing__item">2 tablespoons bacon drippings or shortening</li>
-          <li class="ing__item">2 tablespoons all-purpose flour</li>
-          <li class="ing__item">2 dashes browning sauce</li>
-          <li class="ing__item">1 pinch garlic powder, or to taste</li>
+      <details class="details desc-wrap oxtails__desc-wrap" open>
+        <summary class="summary heading oxtails__heading">Description</summary>
+        <p class="text oxtails__text">This oxtail recipe was my mom's, and it's a soul food blast from the past. I
+          adjust spices to my taste (I love lots of spices).</p>
+        <p class="text oxtails__text">You can double the gravy if you like. My family loves this dish served with rice.
+        </p>
+      </details>
+      <details class="details ingredients oxtails__ing-wrap">
+        <summary class="summary ing-heading oxtails__ing-heading">Ingredients</summary>
+        <ul class="list-reset ing-list oxtails__ing-list">
+          <li class="ing-item oxtails__ing-item">2 pounds beef oxtail</li>
+          <li class="ing-item oxtails__ing-item">1 onion, chopped</li>
+          <li class="ing-item oxtails__ing-item">1 clove garlic, minced</li>
+          <li class="ing-item oxtails__ing-item">1 tablespoon Greek seasoning</li>
+          <li class="ing-item oxtails__ing-item">1 tablespoon salt, or more to taste</li>
+          <li class="ing-item oxtails__ing-item">1 teaspoon ground black pepper, or more to taste</li>
+          <li class="ing-item oxtails__ing-item">1 teaspoon seasoning salt</li>
+          <li class="ing-item oxtails__ing-item">4 cups water, or as needed</li>
+          <li class="ing-item oxtails__ing-item">2 tablespoons bacon drippings or shortening</li>
+          <li class="ing-item oxtails__ing-item">2 tablespoons all-purpose flour</li>
+          <li class="ing-item oxtails__ing-item">2 dashes browning sauce</li>
+          <li class="ing-item oxtails__ing-item">1 pinch garlic powder, or to taste</li>
         </ul>
-      </div>
-      <div class="steps stp dish__stp-wrap">
-        <h2 class="stp__heading">Steps</h2>
-        <ol class="stp__list">
-          <li class="stp__item">
-            <p class="stp__item-text">Place oxtails, onion, garlic, Greek seasoning, 1 tablespoon salt, 1 teaspoon
-              pepper, and seasoning salt in a large stockpot. Fill with enough water to cover oxtails and place over
-              high heat. Bring to a boil. Cover and reduce heat to medium. Cook oxtails until tender, 2 1/2 to 3 hours.
-              Remove from heat and reserve 2 cups broth.</p>
+      </details>
+      <details class="details steps oxtails__stp-wrap">
+        <summary class="summary stp-heading oxtails__stp-heading">Steps</summary>
+        <ol class="stp-list oxtails__stp-list">
+          <li class="stp-item oxtails__stp-item">
+            <p class="text oxtails__stp-text">Place oxtails, onion, garlic, Greek seasoning, 1 tablespoon salt, 1
+              teaspoon pepper, and seasoning salt in a large stockpot. Fill with enough water to cover oxtails and place
+              over high heat. Bring to a boil. Cover and reduce heat to medium. Cook oxtails until tender, 2 1/2 to 3
+              hours. Remove from heat and reserve 2 cups broth.</p>
           </li>
-          <li class="stp__item">
-            <p class="stp__item-text">Warm bacon drippings or shortening in a skillet over medium heat. Add flour; cook
-              and stir for 3 minutes.</p>
+          <li class="stp-item oxtails__stp-item">
+            <p class="text oxtails__stp-text">Warm bacon drippings or shortening in a skillet over medium heat. Add
+              flour; cook and stir for 3 minutes.</p>
           </li>
-          <li class="stp__item">
-            <p class="stp__item-text">Stir in 2 cups reserved broth and browning sauce. Season with salt, pepper, and
-              garlic powder. Cook, stirring constantly, until gravy thickens.</p>
+          <li class="stp-item oxtails__stp-item">
+            <p class="text oxtails__stp-text">Stir in 2 cups reserved broth and browning sauce. Season with salt,
+              pepper, and garlic powder. Cook, stirring constantly, until gravy thickens.</p>
           </li>
-          <li class="stp__item">
-            <p class="stp__item">Place oxtails in the skillet; stir to coat with gravy. Cook, stirring occasionally,
-              over medium-low heat until warmed through, about 5 minutes.</p>
+          <li class="stp-item oxtails__stp-item">
+            <p class="text oxtails__stp-text">Place oxtails in the skillet; stir to coat with gravy. Cook, stirring
+              occasionally, over medium-low heat until warmed through, about 5 minutes.</p>
           </li>
         </ol>
-      </div>
+      </details>
     </div>
   </div>
 </body>
