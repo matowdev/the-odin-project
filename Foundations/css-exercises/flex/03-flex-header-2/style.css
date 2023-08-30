@@ -4,45 +4,78 @@ you'll learn about it later. */
 
 body {
   margin: 0;
-  background: #eee;
   font-family: Besley, serif;
+  background: #eee;
 }
 
 .header {
-  background: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  column-gap: 30px;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 10px 16px;
+  min-width: 490px;
+  background: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+.header-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 30px;
 }
 
 .logo {
-  color: rebeccapurple;
-  font-size: 32px;
   font-weight: 900;
+  font-size: 32px;
   font-style: italic;
+  color: rebeccapurple;
 }
 
-button {
+.list {
+  display: flex;
+  gap: 10px 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  flex-shrink: 0;
+}
+
+.link {
+  /* this removes the line under our links */
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.header-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 30px;
+}
+
+.btn-notifications {
+  flex-shrink: 0;
   border: none;
   border-radius: 8px;
-  background: rebeccapurple;
-  color: white;
   padding: 8px 24px;
+  color: white;
+  background: rebeccapurple;
+  cursor: pointer;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+.profile-image {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: rebeccapurple;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
