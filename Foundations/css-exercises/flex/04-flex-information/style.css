@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -8,8 +12,33 @@ img {
 }
 
 .title {
-  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
   font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.img-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -18,9 +47,15 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 52px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 52px;
   background: #eee;
+}
+
+@media (max-width: 675px) {
+  .content-wrap {
+    justify-content: center;
+  }
 }
