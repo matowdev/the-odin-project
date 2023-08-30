@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Header</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="left-links">
-        <ul>
-          <li><a href="#">ONE</a></li>
-          <li><a href="#">TWO</a></li>
-          <li><a href="#">THREE</a></li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Header</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+  <div class="header page__header">
+    <div class="container header__container">
+      <div class="header__left-links">
+        <ul class="header__list header__list-left">
+          <li class="header__item"><a class="header__item-link" href="#">ONE</a></li>
+          <li class="header__item"><a class="header__item-link" href="#">TWO</a></li>
+          <li class="header__item"><a class="header__item-link" href="#">THREE</a></li>
         </ul>
       </div>
-      <div class="logo">LOGO</div>
-      <div class="right-links">
-        <ul>
-          <li><a href="#">FOUR</a></li>
-          <li><a href="#">FIVE</a></li>
-          <li><a href="#">SIX</a></li>
+      <div class="header__logo">LOGO</div>
+      <div class="header__right-links">
+        <ul class="header__list header__list-right">
+          <li class="header__item"><a class="header__item-link" href="#">FOUR</a></li>
+          <li class="header__item"><a class="header__item-link" href="#">FIVE</a></li>
+          <li class="header__item"><a class="header__item-link" href="#">SIX</a></li>
         </ul>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
