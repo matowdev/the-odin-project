@@ -2,16 +2,13 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-body {
-  margin: 0;
 }
 
 a {
@@ -21,11 +18,13 @@ a {
 /* page */
 
 .page {
+  display: flex;
+  margin: 0;
   min-width: 1024px;
+  height: 100%;
   font-family: "Gothic A1", Arial, sans-serif;
   font-size: 18px;
   line-height: 32px;
-  height: auto;
   color: black;
   background: linear-gradient(#c0c7cf, #fcfdff) no-repeat;
 }
@@ -34,9 +33,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding: 30px 50px 30px;
+  width: 100%;
   max-width: 1600px;
-  min-height: 935px;
-  max-height: 2800px;
   background: inherit;
 }
 
