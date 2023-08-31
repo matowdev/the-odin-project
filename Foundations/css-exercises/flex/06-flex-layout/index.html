@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAYOUT</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="header">
-      <ul class="left-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Store</a></li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAYOUT</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="page">
+  <div class="header page__header">
+    <div class="header__lists-wrap">
+      <ul class="header__list list-left">
+        <li class="header__item"><a class="header__item-link link" href="#">About</a></li>
+        <li class="header__item"><a class="header__item-link link" href="#">Store</a></li>
       </ul>
-      <ul class="right-links">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Settings</a></li>
+      <ul class="header__list list-right">
+        <li class="header__item"><a class="header__item-link link" href="#">Profile</a></li>
+        <li class="header__item"><a class="header__item-link link" href="#">Settings</a></li>
       </ul>
     </div>
-    <div class="content">
-      <img src="./logo.png" alt="Project logo. Represents odin with the project name.">
-      <div class="input">
-        <input type="text">
+  </div>
+  <div class="content page__content">
+    <div class="content__wrap">
+      <img class="content__img" src="logo.png" alt="Project logo. Represents odin with the project name.">
+      <div class="content__input-wrap">
+        <input class="content__input" type="text" maxlength="50">
       </div>
-      <div class="buttons">
-        <button>Do the thing!</button>
-        <button>Do the other thing!</button>
+      <div class="content__buttons-wrap">
+        <button class="content__btn">Do the thing!</button>
+        <button class="content__btn">Do the other thing!</button>
       </div>
     </div>
-    <div class="footer">
-      <ul class="left-links">
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Business</a></li>
+  </div>
+  <div class="footer page__footer">
+    <div class="footer__lists-wrap">
+      <ul class="footer__list list-left">
+        <li class="footer__item"><a class="footer__item-link link" href="#">Advertising</a></li>
+        <li class="footer__item"><a class="footer__item-link link" href="#">Business</a></li>
       </ul>
-      <ul class="right-links">
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
+      <ul class="footer__list list-right">
+        <li class="footer__item"><a class="footer__item-link link" href="#">Privacy</a></li>
+        <li class="footer__item"><a class="footer__item-link link" href="#">Terms</a></li>
       </ul>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
