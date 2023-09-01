@@ -42,6 +42,25 @@ img {
   background-color: var(--main-white);
 }
 
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.page__title {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  font-weight: var(--bold);
+  font-size: 42px;
+  text-align: center;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
