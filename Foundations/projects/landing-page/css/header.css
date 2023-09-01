@@ -1,0 +1,10 @@
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: var(--main-dark);
+}
+
+.header__logo-img {
+  display: block;
+  margin-left: -1px;
+}

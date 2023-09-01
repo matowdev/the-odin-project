@@ -1,0 +1,32 @@
+:root {
+  /* sizes */
+  --page-min-width: 320px;
+  --container-padding: 40px;
+  --container-max-width: 1100px;
+
+  /* fonts */
+  --roboto-mono: "Roboto Mono";
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --default-fs: 16px;
+  --default-lh: 22px;
+
+  /* colors */
+  --main-dark: #1f2937;
+  --main-white: #f9faf8;
+  --gray-white: #e5e7eb;
+  --blue: #3882f6;
+  --black: #000;
+  --white: #fff;
+
+  /* transitions */
+  --short: 0.3s;
+}
+
+/* media queries */
+
+@media (max-width: 460px) {
+  /* :root {} */
+}

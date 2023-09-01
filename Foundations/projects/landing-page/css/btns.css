@@ -1,0 +1,14 @@
+.btn {
+  border-radius: 100px;
+  padding: 15px 40px;
+  max-width: 200px;
+  max-height: 80px;
+  font-family: var(--roboto-mono), Verdana, sans-serif;
+  font-weight: var(--semibold);
+  font-size: 14px;
+  color: var(--main-white);
+  background-color: var(--blue);
+  outline: none;
+  cursor: pointer;
+  box-shadow: none !important;
+}
