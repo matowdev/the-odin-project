@@ -4,7 +4,53 @@
   background-color: var(--main-dark);
 }
 
+.header__content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 40px;
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
 .header__logo-img {
   display: block;
   margin-left: -1px;
+}
+
+.header__title {
+  color: var(--main-white);
+}
+
+.header__nav {
+  display: flex;
+  gap: 10px 30px;
+  margin-right: -1px;
+}
+
+.header__list {
+  display: flex;
+  gap: 31px;
+}
+
+.header__item {
+  color: var(--main-white);
+}
+
+.header__item-link {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  word-spacing: -6px;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .header__content-wrap {
+    justify-content: center;
+  }
 }
