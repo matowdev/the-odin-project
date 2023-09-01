@@ -28,12 +28,12 @@
 .header__nav {
   display: flex;
   gap: 10px 30px;
-  margin-right: -1px;
+  margin-right: -9px;
 }
 
 .header__list {
   display: flex;
-  gap: 31px;
+  gap: 15px;
 }
 
 .header__item {
@@ -42,11 +42,29 @@
 
 .header__item-link {
   display: block;
+  padding: 2px 8px;
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   word-spacing: -6px;
   color: inherit;
+  outline: none;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--short);
+  transition-timing-function: ease-in-out;
+}
+
+.header__item-link:focus:not(:hover) {
+  box-shadow: 0 0 0 2px var(--main-white);
+}
+
+.header__item-link:hover:not(:active) {
+  color: var(--main-dark);
+  background-color: var(--main-white);
+}
+
+.header__item-link:active {
+  color: var(--blue);
 }
 
 @media (max-width: 768px) {
