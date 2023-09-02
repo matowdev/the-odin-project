@@ -12,3 +12,9 @@
   cursor: pointer;
   box-shadow: none !important;
 }
+
+.btn_transparent {
+  border: 2px solid var(--main-white);
+  padding: 6px 33px 7px 33px;
+  background-color: transparent;
+}

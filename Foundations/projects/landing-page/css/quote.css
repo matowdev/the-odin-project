@@ -42,4 +42,11 @@ cite {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .quote__text {
+    font-size: 28px;
+    line-height: 41px;
+    letter-spacing: -3px;
+    word-spacing: -2px;
+  }
 }
