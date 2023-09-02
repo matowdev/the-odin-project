@@ -1,0 +1,45 @@
+.quote {
+  padding-top: 131px;
+  padding-bottom: 102px;
+  background-color: var(--gray-white);
+}
+
+.quote__content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__message {
+  margin: 0;
+  max-width: 74%;
+}
+
+.quote__text {
+  margin-bottom: 4px;
+  font-size: 36px;
+  font-weight: var(--italic);
+  line-height: 41px;
+  font-style: italic;
+  letter-spacing: -6px;
+  word-spacing: -3px;
+}
+
+.quote__footer {
+  font-weight: var(--bold);
+  font-size: 22px;
+  text-align: end;
+  letter-spacing: -1px;
+  word-spacing: -8px;
+}
+
+cite {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,6 +1,6 @@
 .info {
   padding-top: 42px;
-  padding-bottom: 100px;
+  padding-bottom: 89px;
 }
 
 .info__content-wrap {
@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 768px) {
+  .info {
+    padding-bottom: 19px;
+  }
+
   .info__list {
     flex-wrap: wrap;
   }
