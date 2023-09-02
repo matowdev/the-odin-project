@@ -11,12 +11,13 @@
   --semibold: 600;
   --bold: 700;
   --default-fs: 16px;
-  --default-lh: 22px;
+  --default-lh: normal;
 
   /* colors */
   --main-dark: #1f2937;
   --main-white: #f9faf8;
   --gray-white: #e5e7eb;
+  --gray: #6d747d;
   --blue: #3882f6;
   --black: #000;
   --white: #fff;
