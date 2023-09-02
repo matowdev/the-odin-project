@@ -26,9 +26,3 @@
   /* transitions */
   --short: 0.3s;
 }
-
-/* media queries */
-
-@media (max-width: 460px) {
-  /* :root {} */
-}

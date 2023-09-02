@@ -6,8 +6,14 @@
 
 .quote__content-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.quote__title {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 .quote__message {

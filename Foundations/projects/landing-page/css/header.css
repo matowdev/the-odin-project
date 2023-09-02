@@ -54,7 +54,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.header__item-link:focus:not(:hover) {
+.header__item-link:focus-visible:not(:hover) {
   box-shadow: 0 0 0 2px var(--main-white);
 }
 

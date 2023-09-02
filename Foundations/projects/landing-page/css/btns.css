@@ -10,11 +10,33 @@
   background-color: var(--blue);
   outline: none;
   cursor: pointer;
-  box-shadow: none !important;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--short);
+  transition-timing-function: ease-in-out;
+}
+
+.btn:focus-visible:not(:hover) {
+  box-shadow: 0 0 0 2px var(--main-white);
+}
+
+.btn:hover:not(:active) {
+  color: var(--blue);
+  background-color: var(--main-white);
+}
+
+.btn:active {
+  background-color: var(--gray);
 }
 
 .btn_transparent {
-  border: 2px solid var(--main-white);
+  box-shadow: 0 0 0 2px var(--main-white);
   padding: 6px 33px 7px 33px;
   background-color: transparent;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--short);
+  transition-timing-function: ease-in-out;
+}
+
+.btn.btn_transparent:focus-visible:not(:hover) {
+  box-shadow: 0 0 0 4px;
 }
