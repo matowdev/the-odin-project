@@ -1,8 +1,8 @@
-# The_Odin_Project
+# the-odin-project
 
 ### On this path:
 
-- [Proj. "Odin recipes"](https://S2kDev.github.io/The_Odin_Project/Foundations/projects/odin-recipes/)
-- [Proj. "Landing page"](https://S2kDev.github.io/The_Odin_Project/Foundations/projects/landing-page/)
+- [Proj. "Odin recipes"](https://s2kdev.github.io/the-odin-project/Foundations/projects/odin-recipes/)
+- [Proj. "Landing page"](https://s2kdev.github.io/the-odin-project/Foundations/projects/landing-page/)
 
 ![TOP logo](Foundations/projects/odin-recipes/images/TOP.png)
