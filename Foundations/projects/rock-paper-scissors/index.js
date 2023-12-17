@@ -1,36 +1,13 @@
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === null) {
-    return console.log("The game didn't happen!");
-  }
-
-  let correctPlayerSelection = playerSelection.toLowerCase();
-
-  // if (
-  //   correctPlayerSelection === 'rock' ||
-  //   correctPlayerSelection === 'paper' ||
-  //   correctPlayerSelection === 'scissors'
-  // ) {
-  //   console.log('Typing correct!');
-  // } else {
-  //   alert('Something went wrong..?');
-  // }
-
-  if (correctPlayerSelection === computerSelection) {
-    return console.log("It's a draw!");
-  } else if (
-    correctPlayerSelection === 'rock' &&
-    computerSelection === 'scissors'
-  ) {
+  if (playerSelection === 'cancelled') {
+    return console.log("The game didn't happen.. 😭!");
+  } else if (playerSelection === computerSelection) {
+    return console.log("It's a draw 🎲!");
+  } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
     return console.log('Player - Win 🏆!');
-  } else if (
-    correctPlayerSelection === 'paper' &&
-    computerSelection === 'rock'
-  ) {
+  } else if (playerSelection === 'paper' && computerSelection === 'rock') {
     return console.log('Player - Win 🏆!');
-  } else if (
-    correctPlayerSelection === 'scissors' &&
-    computerSelection === 'paper'
-  ) {
+  } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
     return console.log('Player - Win 🏆!');
   } else {
     return console.log('Computer - Win ✌!');
@@ -42,14 +19,28 @@ function getPlayerChoice() {
 
   if (playerChoice === null) {
     alert('You canceled the typing, bye((');
+    playerChoice = 'cancelled';
   } else if (playerChoice === '' || Number(playerChoice)) {
     alert('Incorrect typing..');
-    // getPlayerChoice();
+    playerChoice = getPlayerChoice();
   }
 
-  console.log(`Player shows: ${playerChoice}`);
+  let correctPlayerChoice = playerChoice.toLowerCase();
 
-  return playerChoice;
+  if (
+    correctPlayerChoice === 'rock' ||
+    correctPlayerChoice === 'paper' ||
+    correctPlayerChoice === 'scissors'
+  ) {
+    console.log('typing.. ok');
+  } else if (correctPlayerChoice !== 'cancelled') {
+    alert('Your typing incorrect.. try again!?');
+    correctPlayerChoice = getPlayerChoice();
+  }
+
+  console.log(`Player shows: ${correctPlayerChoice}`);
+
+  return correctPlayerChoice;
 }
 
 function getComputerChoice() {
