@@ -1,17 +1,26 @@
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === 'cancelled') {
-    return console.log("The game didn't happen.. 😭!");
-  } else if (playerSelection === computerSelection) {
-    return console.log("It's a draw 🎲!");
+  let userWinRound = 0;
+  let computerWinRound = 0;
+
+  if (playerSelection === computerSelection) {
+    console.log("It's a draw 🎲!");
+    userWinRound++;
+    computerWinRound++;
   } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-    return console.log('Player - Win 🏆!');
+    console.log('Player - Win 🏆!');
+    userWinRound++;
   } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-    return console.log('Player - Win 🏆!');
+    console.log('Player - Win 🏆!');
+    userWinRound++;
   } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-    return console.log('Player - Win 🏆!');
+    console.log('Player - Win 🏆!');
+    userWinRound++;
   } else {
-    return console.log('Computer - Win ✌!');
+    console.log('Computer - Win ✌!');
+    computerWinRound++;
   }
+
+  return [userWinRound, computerWinRound];
 }
 
 function getPlayerChoice() {
@@ -32,7 +41,7 @@ function getPlayerChoice() {
     correctPlayerChoice === 'paper' ||
     correctPlayerChoice === 'scissors'
   ) {
-    console.log('typing.. ok');
+    // console.log('typing.. ok');
   } else if (correctPlayerChoice !== 'cancelled') {
     alert('Your typing incorrect.. try again!?');
     correctPlayerChoice = getPlayerChoice();
@@ -52,19 +61,54 @@ function getComputerChoice() {
   return arrOptions[randomIndex];
 }
 
-let playerSelection = getPlayerChoice();
-let computerSelection = getComputerChoice();
+function playGame() {
+  alert(`Game: Rock, Paper, Scissors. Up to FIVE wins! Let's get started!`);
 
-playRound(playerSelection, computerSelection);
+  let userWins = 0;
+  let computerWins = 0;
 
-// function game() {
-//   let totalGames = 5;
+  for (let i = 1; i <= 11; i++) {
+    let playerSelection = getPlayerChoice();
+    let computerSelection = getComputerChoice();
 
-//   while (totalGames) {
-//     playRound(playerSelection, computerSelection);
+    if (playerSelection === 'cancelled') {
+      console.log("The game didn't happen.. 😭!");
+      break;
+    }
 
-//     --totalGames;
-//   }
-// }
+    let roundResult = playRound(playerSelection, computerSelection);
+    console.log(`Round ${i}:`);
 
-// game();
+    if (roundResult[0] === roundResult[1]) {
+      userWins++;
+      computerWins++;
+    } else if (roundResult[0] > roundResult[1]) {
+      userWins++;
+    } else {
+      computerWins++;
+    }
+
+    console.log(`Player's intermediate result: ${userWins}`);
+    console.log(`Computer's intermediate result: ${computerWins}`);
+    console.log('---');
+
+    if (userWins == 5 && computerWins == 5) {
+      alert('Draw! Friendship Wins 🎲!');
+      console.log('Draw! Friendship Wins 🎲!');
+      break;
+    } else if (userWins == 5) {
+      alert('Congratulations! Player Won 🏆!');
+      console.log('Congratulations! Player Won 🏆!');
+      break;
+    } else if (computerWins == 5) {
+      alert('Congratulations! Computer Won ✌!');
+      console.log('Congratulations! Computer Won ✌!');
+      break;
+    }
+  }
+
+  console.log(`Player's win streak: ${userWins}`);
+  console.log(`Computer's win streak: ${computerWins}`);
+}
+
+playGame();
