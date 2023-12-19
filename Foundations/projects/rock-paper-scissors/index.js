@@ -1,26 +1,22 @@
 function playRound(playerSelection, computerSelection) {
-  let userWinRound = 0;
-  let computerWinRound = 0;
+  let roundResult = '';
 
   if (playerSelection === computerSelection) {
     console.log("It's a draw 🎲!");
-    userWinRound++;
-    computerWinRound++;
-  } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
+    roundResult = 'draw';
+  } else if (
+    (playerSelection === 'rock' && computerSelection === 'scissors') ||
+    (playerSelection === 'paper' && computerSelection === 'rock') ||
+    (playerSelection === 'scissors' && computerSelection === 'paper')
+  ) {
     console.log('Player - Win 🏆!');
-    userWinRound++;
-  } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-    console.log('Player - Win 🏆!');
-    userWinRound++;
-  } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-    console.log('Player - Win 🏆!');
-    userWinRound++;
+    roundResult = 'user win';
   } else {
     console.log('Computer - Win ✌!');
-    computerWinRound++;
+    roundResult = 'computer win';
   }
 
-  return [userWinRound, computerWinRound];
+  return roundResult;
 }
 
 function getPlayerChoice() {
@@ -41,13 +37,11 @@ function getPlayerChoice() {
     correctPlayerChoice === 'paper' ||
     correctPlayerChoice === 'scissors'
   ) {
-    // console.log('typing.. ok');
+    console.log(`Player shows: ${correctPlayerChoice}`);
   } else if (correctPlayerChoice !== 'cancelled') {
     alert('Your typing incorrect.. try again!?');
     correctPlayerChoice = getPlayerChoice();
   }
-
-  console.log(`Player shows: ${correctPlayerChoice}`);
 
   return correctPlayerChoice;
 }
@@ -79,12 +73,12 @@ function playGame() {
     let roundResult = playRound(playerSelection, computerSelection);
     console.log(`Round ${i}:`);
 
-    if (roundResult[0] === roundResult[1]) {
+    if (roundResult === 'draw') {
       userWins++;
       computerWins++;
-    } else if (roundResult[0] > roundResult[1]) {
+    } else if (roundResult === 'user win') {
       userWins++;
-    } else {
+    } else if (roundResult === 'computer win') {
       computerWins++;
     }
 
