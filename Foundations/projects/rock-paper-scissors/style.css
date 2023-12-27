@@ -1,0 +1,139 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
+  background-color: #23a6d5;
+}
+
+.page__header {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 1px 10px #0c7ceb;
+}
+
+.game__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  background-color: #fcbad3;
+}
+
+.game__btns-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 10px;
+}
+
+.game__btn {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  width: 200px;
+  height: 100px;
+  font-size: 28px;
+  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
+  color: #fff;
+  background-color: #86c0f5;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.game__btn_rock {
+  background-color: #fe2bf1;
+}
+
+.game__btn_paper {
+  background-color: #00dfba;
+}
+
+.game__btn_scissors {
+  background-color: #0c7ceb;
+}
+
+.game__btn:focus-visible:not(:hover) {
+  background-color: #26006e;
+}
+
+.game__btn:hover:not(:active) {
+  background-color: #26006e;
+}
+
+.game__btn:active {
+  background-color: #26006e;
+}
+
+.game__result {
+  height: 30px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.game__score {
+  font-size: 42px;
+  color: #fff;
+}
+
+.game__over-buttons > .hide {
+  display: none;
+}
+
+.game__popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  display: none;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  background-color: #00dfba;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+}
+
+.game__popup-para {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #26006e;
+}
+
+.game__popup-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  max-height: 35px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fcbad3;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.game__popup-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.game__popup-btn:focus-visible:not(:hover) {
+  background-color: #26006e;
+}
+
+.game__popup-btn:hover:not(:active) {
+  background-color: #26006e;
+}
+
+.game__popup-btn:active {
+  background-color: #26006e;
+}

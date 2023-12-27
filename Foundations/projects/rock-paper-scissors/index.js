@@ -1,108 +1,106 @@
+function showWinnerPopup(winner) {
+  let popup = document.getElementById('winnerPopup');
+  let messageElement = document.getElementById('winnerMessage');
+  let continueButton = document.getElementById('continuePopupButton');
+  let cancelButton = document.getElementById('cancelPopupButton');
+
+  messageElement.textContent = `Congratulations, ${winner}! You are the winner!`;
+
+  continueButton.addEventListener('click', function () {
+    resetGame();
+    popup.style.display = 'none';
+  });
+
+  cancelButton.addEventListener('click', function () {
+    resetGame();
+    popup.style.display = 'none';
+  });
+
+  popup.style.display = 'flex';
+}
+
+function updateScoreAndCheckWinner() {
+  let scoreElement = document.getElementById('score');
+  scoreElement.textContent = `Player: ${userWins} | Computer: ${computerWins}`;
+
+  if (userWins === 5 || computerWins === 5) {
+    showWinnerPopup(userWins === 5 ? 'Player' : 'Computer');
+  }
+}
+
+function resetGame() {
+  userWins = 0;
+  computerWins = 0;
+  updateResults('', '');
+}
+
+let userWins = 0;
+let computerWins = 0;
+
 function playRound(playerSelection, computerSelection) {
   let roundResult = '';
 
   if (playerSelection === computerSelection) {
-    console.log("It's a draw 🎲!");
     roundResult = 'draw';
   } else if (
     (playerSelection === 'rock' && computerSelection === 'scissors') ||
     (playerSelection === 'paper' && computerSelection === 'rock') ||
     (playerSelection === 'scissors' && computerSelection === 'paper')
   ) {
-    console.log('Player - Win 🏆!');
     roundResult = 'user win';
   } else {
-    console.log('Computer - Win ✌!');
     roundResult = 'computer win';
   }
 
   return roundResult;
 }
 
-function getPlayerChoice() {
-  let playerChoice = prompt('Type: rock, paper or scissors', '');
+function getPlayerChoiceByButton(choice) {
+  let computerSelection = getComputerChoice();
+  let roundResult = playRound(choice, computerSelection);
+  updateResults(`Player shows: ${choice}`);
+  updateResults(`Computer selects: ${computerSelection}`);
+  updateResults(`Round ${userWins + computerWins + 1}:`);
+  updateResults(
+    roundResult === 'draw'
+      ? `It's a draw 🎲! ${choice.toUpperCase()} = ${computerSelection.toUpperCase()}!`
+      : roundResult === 'user win'
+      ? `Player - Win 🏆! ${choice.toUpperCase()} beats ${computerSelection.toUpperCase()}!`
+      : `Computer - Win ✌! ${computerSelection.toUpperCase()} beats ${choice.toUpperCase()}!`,
+    roundResult
+  );
 
-  if (playerChoice === null) {
-    alert('You canceled the typing, bye((');
-    playerChoice = 'cancelled';
-  } else if (playerChoice === '' || Number(playerChoice)) {
-    alert('Incorrect typing..');
-    playerChoice = getPlayerChoice();
-  }
-
-  let correctPlayerChoice = playerChoice.toLowerCase();
-
-  if (
-    correctPlayerChoice === 'rock' ||
-    correctPlayerChoice === 'paper' ||
-    correctPlayerChoice === 'scissors'
-  ) {
-    console.log(`Player shows: ${correctPlayerChoice}`);
-  } else if (correctPlayerChoice !== 'cancelled') {
-    alert('Your typing incorrect.. try again!?');
-    correctPlayerChoice = getPlayerChoice();
-  }
-
-  return correctPlayerChoice;
+  return roundResult;
 }
 
 function getComputerChoice() {
   let arrOptions = ['rock', 'paper', 'scissors'];
   let randomIndex = Math.floor(Math.random() * arrOptions.length);
 
-  console.log(`Computer selects: ${arrOptions[randomIndex]}`);
-
   return arrOptions[randomIndex];
 }
 
-function playGame() {
-  alert(`Game: Rock, Paper, Scissors. Up to FIVE wins! Let's get started!`);
+function updateResults(message, result) {
+  let gameResultsElement = document.getElementById('result');
+  gameResultsElement.textContent = message;
 
-  let userWins = 0;
-  let computerWins = 0;
-
-  for (let i = 1; i <= 11; i++) {
-    let playerSelection = getPlayerChoice();
-    let computerSelection = getComputerChoice();
-
-    if (playerSelection === 'cancelled') {
-      console.log("The game didn't happen.. 😭!");
-      break;
-    }
-
-    let roundResult = playRound(playerSelection, computerSelection);
-    console.log(`Round ${i}:`);
-
-    if (roundResult === 'draw') {
-      userWins++;
-      computerWins++;
-    } else if (roundResult === 'user win') {
-      userWins++;
-    } else if (roundResult === 'computer win') {
-      computerWins++;
-    }
-
-    console.log(`Player's intermediate result: ${userWins}`);
-    console.log(`Computer's intermediate result: ${computerWins}`);
-    console.log('---');
-
-    if (userWins == 5 && computerWins == 5) {
-      alert('Draw! Friendship Wins 🎲!');
-      console.log('Draw! Friendship Wins 🎲!');
-      break;
-    } else if (userWins == 5) {
-      alert('Congratulations! Player Won 🏆!');
-      console.log('Congratulations! Player Won 🏆!');
-      break;
-    } else if (computerWins == 5) {
-      alert('Congratulations! Computer Won ✌!');
-      console.log('Congratulations! Computer Won ✌!');
-      break;
-    }
+  if (result === 'user win') {
+    userWins++;
+  } else if (result === 'computer win') {
+    computerWins++;
   }
 
-  console.log(`Player's win streak: ${userWins}`);
-  console.log(`Computer's win streak: ${computerWins}`);
+  updateScoreAndCheckWinner();
 }
 
-playGame();
+document.getElementById('rock').addEventListener('click', function () {
+  getPlayerChoiceByButton('rock');
+});
+
+document.getElementById('paper').addEventListener('click', function () {
+  getPlayerChoiceByButton('paper');
+});
+
+document.getElementById('scissors').addEventListener('click', function () {
+  getPlayerChoiceByButton('scissors');
+});

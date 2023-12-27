@@ -5,11 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock - Paper - Scissors</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 
-<body>
+<body class="page game">
+  <h1 class="page__header">Let's play!?</h1>
 
-  <script src="index.js"></script>
+  <div class="game__container">
+    <div class="game__btns-wrap">
+      <button class="game__btn game__btn_rock" id="rock">ROCK</button>
+      <button class="game__btn game__btn_paper" id="paper">PAPER</button>
+      <button class="game__btn game__btn_scissors" id="scissors">SCISSORS</button>
+    </div>
+    <div class="game__result" id="result"></div>
+    <div class="game__score" id="score">Player: 0 | Computer: 0</div>
+  </div>
+
+  <div class="game__popup" id="winnerPopup">
+    <p class="game__popup-para" id="winnerMessage"></p>
+    <button class="game__popup-btn" id="continuePopupButton">Continue</button>
+    <button class="game__popup-btn" id="cancelPopupButton">Cancel</button>
+  </div>
 </body>
 
 </html>
