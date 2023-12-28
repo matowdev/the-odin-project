@@ -14,8 +14,16 @@
   <script src="index.js" defer></script>
 </head>
 
-<body>
-  <div class="container" id="board"></div>
+<body class="page">
+  <h1 class="page__header">Etch-A-Sketch</h1>
+  <div class="page__container sketch">
+    <h2 class="sketch__header">**clamp the left mouse button</h2>
+    <div class="sketch__container" id="board"></div>
+    <div class="sketch__btns-wrap">
+      <button class="sketch__btn reset__btn">Clear canvas</button>
+      <button class="sketch__btn change__btn">Try rainbow?</button>
+    </div>
+  </div>
 </body>
 
 </html>
