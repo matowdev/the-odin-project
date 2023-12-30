@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
+  overflow: hidden;
+  background: linear-gradient(#1b1b1bdc, #e5e6eb);
+}
+
+.page__header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #9cacbf;
+}
