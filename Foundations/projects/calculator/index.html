@@ -16,6 +16,27 @@
 
 <body class="page">
   <h1 class="page__header">Let's do the math!?</h1>
+  <div class="page__container calc">
+    <input class="calc__display" type="text" id="display" disabled>
+    <button class="calc__btn" onclick="clearDisplay()">AC</button>
+    <button class="calc__btn" onclick="backspace()">⟵</button>
+    <button class="calc__btn" onclick="addDecimal()">.</button>
+    <button class="calc__btn" onclick="operate('/')">/</button>
+    <button class="calc__btn" onclick="appendToDisplay('7')">7</button>
+    <button class="calc__btn" onclick="appendToDisplay('8')">8</button>
+    <button class="calc__btn" onclick="appendToDisplay('9')">9</button>
+    <button class="calc__btn" onclick="operate('*')">*</button>
+    <button class="calc__btn" onclick="appendToDisplay('4')">4</button>
+    <button class="calc__btn" onclick="appendToDisplay('5')">5</button>
+    <button class="calc__btn" onclick="appendToDisplay('6')">6</button>
+    <button class="calc__btn" onclick="operate('-')">-</button>
+    <button class="calc__btn" onclick="appendToDisplay('1')">1</button>
+    <button class="calc__btn" onclick="appendToDisplay('2')">2</button>
+    <button class="calc__btn" onclick="appendToDisplay('3')">3</button>
+    <button class="calc__btn" onclick="operate('+')">+</button>
+    <button class="calc__btn calc__btn_big calc__btn_zero" onclick="appendToDisplay('0')">0</button>
+    <button class="calc__btn calc__btn_big calc__btn_colored" onclick="calculate()">=</button>
+  </div>
 </body>
 
 </html>

@@ -5,17 +5,108 @@
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 0;
   height: 100vh;
-  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
   overflow: hidden;
+  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
   background: linear-gradient(#1b1b1bdc, #e5e6eb);
 }
 
 .page__header {
   margin-top: 0;
+  margin-bottom: 20px;
+  color: #c97cc3;
+}
+
+.page__container {
+  margin-bottom: 55px;
+}
+
+.calc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 35px 20px;
+  width: 390px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #c9c9c9;
+  box-shadow: 0 1px 10px #4f4f4f;
+}
+
+.calc__display {
   margin-bottom: 10px;
-  color: #9cacbf;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  width: 330px;
+  font-size: 32px;
+  text-align: right;
+  color: #4f4f4f;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 10px #4f4f4f;
+}
+
+.calc__btn {
+  border: 1px solid #444;
+  border-radius: 8px;
+  width: 75px;
+  height: 75px;
+  font-family: "Roboto Mono", monospace, Verdana, sans-serif;
+  font-size: 25px;
+  color: #fff;
+  background-color: #666;
+  box-shadow: 0 1px 10px #4f4f4f;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.calc__btn:focus-visible:not(:hover) {
+  color: #c97cc3;
+  background-color: #4f4f4f;
+}
+
+.calc__btn:hover:not(:active) {
+  color: #c97cc3;
+  background-color: #4f4f4f;
+}
+
+.calc__btn:active {
+  color: #c97cc3;
+  background-color: #4f4f4f;
+}
+
+.calc__btn_big {
+  width: 160px;
+  font-size: 30px;
+}
+
+.calc__btn_zero {
+  font-size: 22px;
+}
+
+.calc__btn_colored {
+  color: #c97cc3;
+  transition: color 0.2s ease-in-out;
+}
+
+.calc__btn_colored:focus-visible:not(:hover) {
+  color: #fff;
+}
+
+.calc__btn_colored:hover:not(:active) {
+  color: #fff;
+}
+
+.calc__btn_colored:active {
+  color: #fff;
 }
